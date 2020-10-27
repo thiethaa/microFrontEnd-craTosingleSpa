@@ -14,5 +14,9 @@ registerApplication(
     () => import('./packages/weather_app'),
     location => location.pathname === '/weather_app',
 )
-
+registerApplication(
+    'todos_vue_app',
+    () => import('./packages/todos_vue_app'),
+    location => location.pathname === '/todos_vue_app',
+)
 start()
